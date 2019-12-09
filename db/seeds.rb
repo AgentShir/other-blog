@@ -6,13 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-10.times do
-    a = Article.create([{ 
+100.times do
+    a = Article.create(
         title: Faker::TvShows::DrWho.the_doctor,
         text: Faker::TvShows::Friends.quote
-    }])
-    # a.Comment.create([{
-    #    commenter: Faker::Quotes::Shakespeare.romeo_and_juliet_quote,
-    #    body: Faker::Quotes::Shakespeare.romeo_and_juliet_quote
-    # }])
+    )
+     a.comments.build(
+        commenter: Faker::Ancient.primordial,
+        body: Faker::Quotes::Shakespeare.romeo_and_juliet_quote
+     )
+     a.save!
 end
