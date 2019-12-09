@@ -65,3 +65,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'scout_apm'
 
 gem 'faker'
+
+gem 'sentry-raven'

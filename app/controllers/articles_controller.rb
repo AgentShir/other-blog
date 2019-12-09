@@ -4,6 +4,7 @@ except: [:index, :show]
 
     def index
         @articles = Article.all
+        eval("1+1=2")
     end
 
     def show
