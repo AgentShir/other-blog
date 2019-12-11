@@ -4,7 +4,7 @@ except: [:index, :show]
 
     def index
         @articles = Article.all
-        eval("1+1=2")
+        [1, 2, 3].first(4, 5)
     end
 
     def show
