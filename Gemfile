@@ -67,3 +67,5 @@ gem 'scout_apm'
 gem 'faker'
 
 gem 'sentry-raven'
+
+gem "bugsnag", "~> 6.12"
