@@ -69,3 +69,5 @@ gem 'faker'
 gem 'sentry-raven'
 
 gem "bugsnag", "~> 6.12"
+
+gem 'honeybadger', '~> 4.0'
