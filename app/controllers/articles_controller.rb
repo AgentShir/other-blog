@@ -4,7 +4,7 @@ except: [:index, :show]
 
     def index
         @articles = Article.all
-        Bugsnag.notify("Test error")
+        Bugsnag.notify("If you're reading this, it's too late")
     end
 
     def show
